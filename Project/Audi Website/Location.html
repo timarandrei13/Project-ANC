@@ -1,0 +1,128 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Audi Cluj-Napoca</title>
+            <link rel="stylesheet" href="css/style.css">
+            <script src="JS/script.js"></script>
+        </head>
+    
+        <body style="background-color:black">
+        <div class="container">
+            <header>
+                <div class="primary_header">
+                    <img src="logo.png" alt="audi logo" width="200" height="100">
+                </div>
+    
+                <nav class="secondary_header">
+                    <ul id="menu">
+                     <li><a href="Audi.html">Home</a></li> 
+                     <li><a href="Models.html">Models</a></li> 
+                     <li><a href="Preferences.html">Preferences</a></li>
+                     <li><a href="Location.html">Location</a></li> 
+                     <li><a href="Staff.html">Staff</a></li>
+                     <li><a href="ContactUs.html">Contact Us</a></li> 
+
+                     <div class="dropdown">
+                        <button class="dropbtn">Menu📃</button>
+                        <div class="dropdown-content">
+                            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+                            <div id="id01" class="modal">
+                              
+                              <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontact">
+                                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                  <img src="avatar.png" alt="Avatar" class="avatar">
+                                </div>
+                            
+                                <div class="contact">
+                                  <label for="uname"><b>Username</b></label>
+                                  <input type="text" placeholder="Enter Username" name="uname" required>
+                            
+                                  <label for="psw"><b>Password</b></label>
+                                  <input type="password" placeholder="Enter Password" name="psw" required>
+                                    
+                                  <button type="submit">Login</button>
+                                  <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                                </div>
+                            
+                                <div class="contact" style="background-color:#f1f1f1">
+                                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                  <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                              </form>
+                            </div>
+
+                          <a href="#">Log Out</a>
+                          <a href="#">Register</a>
+                        </div>
+                      </div>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>   
+                <div id="content_header"></div>
+                <div id="site_content">
+                  <div id="sidebar_container">
+                    <div class="sidebar">
+                      <div class="sidebar_top"></div>
+                <div="sidebar_item">
+                        <h3>Latest News</h3>
+                        <h4>New Website Updates</h4>
+                        <h5>25/06/2022</h5>
+                    
+                    <div id="content"> 
+                        <p>Audi și 4.screen au convenit asupra unui parteneriat cu obiectivul 
+                           de a optimiza experiența viitoare a ocupanților de la bordul automobilelor.
+                           La lansarea tehnologiei, clienții Audi vor beneficia de informații și mai 
+                           ample cu privire la punctele de interes (POI) căutate....<span id="dots">...</span><span id="more">
+                           Viitorul mobilității nu este doar un apanaj al tehnologiei. Noile noastre 
+                           idei, concepte de design și de arhitectură a spațiului iau naștere întotdeauna 
+                           din schimbul de idei cu oamenii. De aceea, dorim să vă deschidem porțile spre 
+                           universul Audi, pentru a vă arăta ce anume ne inspiră pe noi și ce anume ne 
+                           pune în mișcare pe calea noastră spre viitor.</span>
+                        </p>
+                        <button onclick="myFunction()" id="myBtn">Read less</button>
+                    </div>
+            
+                </div>
+                     
+                      <div class="sidebar_base"></div>
+                    </div>
+                    
+                    <div class="sidebar">
+                      <div class="sidebar_top"></div>
+                      <div class="sidebar_base">
+                        <h3><button type="search">🔍Search location</button></h3>
+                        <form method="post" action="#" id="search_form">
+                            <p>
+                              <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                            </p>
+                            <img src="location.png" width="200" height="200">
+                        </form>
+                      <div class="sidebar_base"></div>
+                    </div>
+                    </div>
+
+                <div id="concepte">
+                  <h1>Where we are ?</h1>
+                  <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6502.874733906801!2d23.59034210244255!3d46.742776081129186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sro!4v1656017530767!5m2!1sde!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                </div>
+            </section>
+
+            <div class="social">
+                <p class="social_icon"><img src="facebook.png" title="Facebook" width="100" alt="" class="thumbnail"/></p>
+                <p class="social_icon"><img src="instagram.png" title="Instagram" width="100" alt="" class="thumbnail"/></p>
+                <p class="social_icon"><img src="twitter.png" title="Twitter" width="100" alt="" class="thumbnail"/></p>
+                <p class="social_icon"><img src="youtube.png" title="YouTube" width="100" alt="" class="thumbnail"/></p>
+            </div>
+
+            <footer class="secondary_header footer">
+                <div class="copyright">&copy;2022 - <strong>Audi Cluj-Napoca</strong></div>
+            </footer>        
+        </div>    
+        </body>
+    </html>

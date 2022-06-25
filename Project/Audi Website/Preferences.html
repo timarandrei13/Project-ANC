@@ -1,0 +1,144 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Audi Cluj-Napoca</title>
+            <link rel="stylesheet" href="css/style.css">
+            <script src="JS/script.js"></script>
+        </head>
+    
+        <body style="background-color:black">
+        <div class="container">
+            <header>
+                <div class="primary_header">
+                    <img src="logo.png" alt="audi logo" width="200" height="100">
+                </div>
+    
+                <nav class="secondary_header">
+                    <ul id="menu">
+                     <li><a href="Audi.html">Home</a></li> 
+                     <li><a href="Models.html">Models</a></li> 
+                     <li><a href="Preferences.html">Preferences</a></li>
+                     <li><a href="Location.html">Location</a></li>
+                     <li><a href="Staff.html">Staff</a></li> 
+                     <li><a href="ContactUs.html">Contact Us</a></li> 
+
+                     <div class="dropdown">
+                        <button class="dropbtn">Menu📃</button>
+                        <div class="dropdown-content">
+                            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+                            <div id="id01" class="modal">
+                              
+                              <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontact">
+                                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                  <img src="avatar.png" alt="Avatar" class="avatar">
+                                </div>
+                            
+                                <div class="contact">
+                                  <label for="uname"><b>Username</b></label>
+                                  <input type="text" placeholder="Enter Username" name="uname" required>
+                            
+                                  <label for="psw"><b>Password</b></label>
+                                  <input type="password" placeholder="Enter Password" name="psw" required>
+                                    
+                                  <button type="submit">Login</button>
+                                  <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                                </div>
+                            
+                                <div class="contact" style="background-color:#f1f1f1">
+                                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                  <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                              </form>
+                            </div>
+
+                          <a href="#">Log Out</a>
+                          <a href="#">Register</a>
+                        </div>
+                      </div>
+                    </ul>
+                </nav>
+             </header>
+
+        <section>
+            <div class="creator">
+
+                <img src="createcar.png" width="600" height="400">
+
+                <h1>Create your car!</h1>
+
+                <br>
+
+                <label for="cars">Select model</label>
+                <br>
+                <select none="Model" id="cars">
+                <option>A1</option>
+                <option>A2</option>
+                <option>A3</option>
+                <option>A4</option>
+                <option>A5</option>
+                <option>A6</option>
+                <option>A7</option>
+                <option>A8</option>
+                <option selected="selected">Model</option>
+                </select>
+                
+                <br>
+                <br>
+                
+                <label>Select combustible</label>
+                <br>
+                <ul>
+                   <li>Petrol</li>
+                   <input type="checkbox">     
+                   <li>Diesel</li>
+                   <input type="checkbox">
+                   <li>Electric</li>
+                   <input type="checkbox">
+                   <li>Hybrid</li>
+                   <input type="checkbox">
+                </ul>  
+
+                <br>
+
+                <label>Select color</label>
+                <br>
+                <ul> 
+                   <li>Black</li>
+                   <input type="radio">
+                   <li>White</li>
+                   <input type="radio">
+                   <li>Grey</li>
+                   <input type="radio">
+                   <li>Brown</li>
+                   <input type="radio">
+                   <li>Blue</li>
+                   <input type="radio">
+                   <li>Green</li>
+                   <input type="radio">
+                   <li>Other colors</li>
+                   <input type="radio">
+                </ul>   
+            
+                <br>
+
+                <input type="button" id="Show" value="🔍Show my car!"> 
+             </div>
+         </section>
+
+             <div class="social">
+                <p class="social_icon"><img src="facebook.png" title="Facebook" width="100" alt="" class="thumbnail"/></p>
+                <p class="social_icon"><img src="instagram.png" title="Instagram" width="100" alt="" class="thumbnail"/></p>
+                <p class="social_icon"><img src="twitter.png" title="Twitter" width="100" alt="" class="thumbnail"/></p>
+                <p class="social_icon"><img src="youtube.png" title="YouTube" width="100" alt="" class="thumbnail"/></p>
+            </div>
+
+            <footer class="secondary_header footer">
+                <div class="copyright">&copy;2022 - <strong>Audi Cluj-Napoca</strong></div>
+            </footer>        
+        </div>    
+        </body>
+    </html>

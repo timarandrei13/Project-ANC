@@ -1,0 +1,132 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Audi Cluj-Napoca</title>
+            <link rel="stylesheet" href="css/style.css">
+            <script src="JS/script.js"></script>
+        </head>
+    
+        <body style="background-color:black">
+        <div class="container">
+            <header>
+                <div class="primary_header">
+                    <img src="logo.png" alt="audi logo" width="200" height="100">
+                </div>
+    
+                <nav class="secondary_header">
+                    <ul id="menu">
+                     <li><a href="Audi.html">Home</a></li> 
+                     <li><a href="Models.html">Models</a></li> 
+                     <li><a href="Preferences.html">Preferences</a></li>
+                     <li><a href="Location.html">Location</a></li> 
+                     <li><a href="Staff.html">Staff</a></li>
+                     <li><a href="ContactUs.html">Contact Us</a></li> 
+
+                     <div class="dropdown">
+                        <button class="dropbtn">Menu📃</button>
+                        <div class="dropdown-content">
+                            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+                            <div id="id01" class="modal">
+                              
+                              <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontact">
+                                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                  <img src="avatar.png" alt="Avatar" class="avatar">
+                                </div>
+                            
+                                <div class="contact">
+                                  <label for="uname"><b>Username</b></label>
+                                  <input type="text" placeholder="Enter Username" name="uname" required>
+                            
+                                  <label for="psw"><b>Password</b></label>
+                                  <input type="password" placeholder="Enter Password" name="psw" required>
+                                    
+                                  <button type="submit">Login</button>
+                                  <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                                </div>
+                            
+                                <div class="contact" style="background-color:#f1f1f1">
+                                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                  <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                              </form>
+                            </div>
+
+                          <a href="#">Log Out</a>
+                          <a href="#">Register</a>
+                        </div>
+                      </div>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>
+                <h2 class="noDisplay">Main Content</h2>
+                <div class="row">
+                <div class="columns">
+                    <p class="thumbnail_align"> <img src="Amodel.png" alt="" class="thumbnail"/></p>
+                    <h4>&nbsp A Models &nbsp</h4>
+                    <p>Inconfundabil și distins: A7. De la blocurile optice care sunt acum și mai tăioase 
+                       și au o semnătură luminoasă mai individualizată, la partea din față verticală, cu 
+                       grila Audi Singleframe lată, la silueta de coupe și până la partea din spate sculpturală: 
+                       A7 Sportback este ambasadorul unui limbaj revoluționar de design, etalându-și totodată 
+                       cu mândrie gena quattro. Design de coupe, spațiu de limuzină și variabilitate de Avant: 
+                       Audi A7 Sportback îmbină sinergic calitățile ideale din trei categorii auto diferite, 
+                       fiind astfel însoțitorul optim pentru business dar și pentru timpul liber.</p>
+                </div>
+                <div class="columns">
+                    <p class="thumbnail_align"> <img src="Qmodel.png" alt="" class="thumbnail"/> </p>
+                    <h4>&nbsp Q Models &nbsp</h4>
+                    <p>Tehnologii de infotainment de ultimă oră și sisteme de asistență a șoferului, senzații 
+                       de neuitat la volan, datorită tracțiunii integrale quattro, plus soluții inteligente 
+                       pentru șasiu, design plin de forță și spațiu din plin pentru până la șapte persoane. 
+                       Doamnelor și domnilor: Audi Q7.Datorită tehnologiei inovatoare de infotainment, ce
+                       permite utilizarea extrem de intuitivă, vă puteți continua cotidianul digital și atunci
+                       când urcați la bordul mașinii. Astfel, direct în fața dumneavoastră, va trona Audi 
+                       virtual cockpit. Pe display-ul de înaltă rezoluție cu diagonala de 12,3 inchi, panoul 
+                       complet digitalizat de instrumente vă oferă informații despre automobil, ca de exemplu, 
+                       viteza și turația.</p>
+                </div>
+                <div class="columns">
+                    <p class="thumbnail_align"> <img src="Rmodel.png" alt="" class="thumbnail"/> </p>
+                    <h4>&nbsp R Models &nbsp</h4>
+                    <p>R8 întruchipează esența a tot ceea ce însemnă motorsport și exclusivitate. R8 Coupé V10
+                       quattro este Audi în formă pură. La cel mai înalt nivel.Liniile orizontale adânci 
+                       accentuează înălțimea redusă și sportivitatea modelului Audi R8 Coupé V10 quattro. 
+                       Profilul este dominat de blade-urile caracteristice, iar partea din spate asigură 
+                       o încheiere spectaculoasă, compusă din difuzorul sport, grilele prizelor de aer,
+                       plus noile terminații ovale ale sistemului de evacuare. Jantele de 19 inchi incluse 
+                       în dotarea standard pot fi înlocuite opțional cu noile jante de 20 de inchi cu design 
+                       în V și cu trei variante diferite de finisaj.</p>
+                </div>
+                <div class="columns">
+                    <p class="thumbnail_align"> <img src="TTmodel.png" alt="" class="thumbnail"/> </p>
+                    <h4>&nbsp TT Modelsn&nbsp</h4>
+                    <p>Simțiți puterea pură, savurați senzațiile condusului sportiv și bucurați-vă de fiecare 
+                       dată din nou de designul interior și exterior atractiv prin care se distinge Audi TTS 
+                       Coupé. Atât când accelerați în forță, cât și atunci când abordați virajele cu viteză 
+                       mai mare, dar și când frânați: scaunele sport S cu emblema S vă oferă suportul necesar 
+                       condusului dinamic și sunt incluse în dotarea standard. Volanul sport TTS multifuncțional 
+                       plus cu cusături decorative contrastante este plăcut la atingere și vă oferă totodată 
+                       condițiile optime pentru a putea struni mașina aceasta puternică. Iar celor care își 
+                       doresc ceva chiar și mai special, le oferim "TTS competition".</p>
+                </div>
+        </div>
+            </section>
+
+            <div class="social">
+                <p class="social_icon"><img src="facebook.png" title="Facebook" width="100" alt="" class="thumbnail"/></p>
+                <p class="social_icon"><img src="instagram.png" title="Instagram" width="100" alt="" class="thumbnail"/></p>
+                <p class="social_icon"><img src="twitter.png" title="Twitter" width="100" alt="" class="thumbnail"/></p>
+                <p class="social_icon"><img src="youtube.png" title="YouTube" width="100" alt="" class="thumbnail"/></p>
+            </div>
+
+            <footer class="secondary_header footer">
+                <div class="copyright">&copy;2022 - <strong>Audi Cluj-Napoca</strong></div>
+            </footer>        
+        </div>    
+        </body>
+    </html>
